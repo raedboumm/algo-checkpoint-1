@@ -1,0 +1,28 @@
+ALGORITHM checkpoint
+VAR
+Str:STRING
+w:INTEGER
+v,c:INTEGER
+i:INTEGER:=0
+BEGIN
+
+        REPEAT
+            whrite("give us your sentence");
+            read (str);
+        UNTIL (str[str.length]==".")
+   
+
+        WHILE (Str[i]<>".") DO
+            i=i+1;
+        IF (str[i]==" ") THEN
+            W=w+1;
+        END_IF
+            IF (Str[i]=="a"||"e"||"i"||"o"||"u" ) THEN
+            v=v+1;
+    END_IF
+    END_WHILE
+    Write ("The number of vowels in the sentence:",v)
+    Write ("The number of words in the sentence:" , w)
+    Write("The length of the sentence", str.length )
+    
+END
